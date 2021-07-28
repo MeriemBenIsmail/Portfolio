@@ -1,6 +1,12 @@
+@import '../../global.scss';
+
 .contact {
   background-color: #ffff;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   .left {
     flex: 1;
@@ -37,6 +43,11 @@
   
         border-radius: 10px;
 
+        @include mobile {
+          width: 200px;
+          height: 20px;
+
+        }
         &:focus {
           outline: none;
         }
@@ -48,6 +59,12 @@
         font-size: 14px;
      
         border-radius: 10px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+
+        }
 
         &:focus {
           outline: none;
